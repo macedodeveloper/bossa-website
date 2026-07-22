@@ -1,6 +1,6 @@
 "use client";
 
-import { CardGrid, SiteShell, bossaIntro, clientList, homeThinking, homeWork } from "./idc";
+import { CardGrid, SiteShell, bossaHeroIntro, clientList, homeThinking, homeWork } from "./idc";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
             <p className="label">Bossa</p>
           </div>
           <div className="col-6 bossa-hero-content">
-            <h1>{bossaIntro}</h1>
+            <h1>{bossaHeroIntro}</h1>
             <figure className="bossa-work-gif" aria-label="Bossa work preview">
               <img src="/assets/bossa-work.gif" alt="Bossa work preview" />
             </figure>

@@ -10,7 +10,8 @@ type CardItem = {
   video?: string;
 };
 
-export const bossaIntro = "We partner with teams building ambitious technology and help shape it into products that feel clear, useful, and human. Our process combines thoughtful design craft with the speed AI now makes possible, so great ideas can become better experiences faster.";
+export const bossaIntro = "Good technology deserves better design. We build it with care, at the pace AI makes possible.";
+export const bossaHeroIntro = "We partner with teams building ambitious technology and help shape it into products that feel clear, useful, and human. Our process combines thoughtful design craft with the speed AI now makes possible, so great ideas can become better experiences faster.";
 
 export const clientList = "Apple, Google, Marriott Hotels, Vercel, JPMorgan, Forrester, FOX, Facebook, 99, NBA, XP Inc, C6 Bank, Brex, and others.";
 

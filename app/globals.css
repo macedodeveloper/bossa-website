@@ -407,10 +407,8 @@ h2,
 }
 
 footer {
-  min-height: calc(100vh - 4.4rem);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border-top: 1px solid rgb(var(--grey-20));
   padding-top: 1.6rem;
   overflow: hidden;
@@ -428,7 +426,7 @@ footer {
   width: 100vw;
   height: 12.75vw;
   overflow: hidden;
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .footer-brand img {
