@@ -318,6 +318,10 @@ h2,
   justify-content: flex-end;
 }
 
+.journal-listing-main .listing-grid {
+  justify-content: flex-start;
+}
+
 .work-listing-main .card {
   width: calc((100% - var(--gutter) * 3) / 4);
 }

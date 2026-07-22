@@ -6,6 +6,7 @@ type CardItem = {
   name: string;
   detail: string;
   slug?: string;
+  href?: string;
   image?: string;
   video?: string;
 };
@@ -38,38 +39,59 @@ export const allWork: CardItem[] = [
   { name: "Partner squads", slug: "partner-squads", detail: "Small senior teams that move with the focus of a studio and the speed of AI.", image: "https://www.bossa.work/_nuxt/mapfry-img-02.ZqsFuOx_.png" },
 ];
 
-const thinkingImages = [
-  "https://images.unsplash.com/photo-1764588037085-a78240016f8b?auto=format&fit=crop&w=900&q=75",
-  "https://images.unsplash.com/photo-1761123261084-53c40fe1e607?auto=format&fit=crop&w=900&q=75",
-  "https://images.unsplash.com/photo-1760446410679-2d93cd1c2607?auto=format&fit=crop&w=900&q=75",
-  "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=75",
-  "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=900&q=75",
-  "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=75",
-  "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=75",
-  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=75",
-  "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=900&q=75",
-  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=75",
-  "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=900&q=75",
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=75",
-];
-
 export const homeThinking: CardItem[] = [
-  { name: "Design is the critical edge", detail: "Why taste, care, and judgment matter more as AI accelerates production.", image: thinkingImages[0] },
-  { name: "The pace AI makes possible", detail: "Speed is only useful when the product gets clearer, not louder.", image: thinkingImages[1] },
-  { name: "Better questions before better screens", detail: "The work before the work: finding what a product actually needs to become.", image: thinkingImages[2] },
-  { name: "Care as a product advantage", detail: "Trust is built through hundreds of small decisions users rarely name.", image: thinkingImages[3] },
-  { name: "Against meeting-shaped work", detail: "A studio model for building without dragging yesterday’s process into tomorrow.", image: thinkingImages[4] },
-  { name: "Function and feeling", detail: "The space between how something works and how it makes someone feel.", image: thinkingImages[5] },
+  {
+    name: "AI Didn’t Kill SaaS. It Killed Average Products",
+    detail: "The real impact of AI isn’t replacing software, it’s changing what makes software worth paying for.",
+    href: "https://medium.com/@macethinho/ai-didnt-kill-saas-it-killed-average-products-e0c5ffa74bb4",
+    image: "https://miro.medium.com/v2/resize:fit:1200/1*3rUsGFqMWlXQdRvZqxE1aw.jpeg",
+  },
+  {
+    name: "AI Won’t Replace Product Designers. But It Will Split Us Into Three Groups.",
+    detail: "Your future could be defined by a single question that almost no one asks themselves: do you like to think?",
+    href: "https://medium.com/@macethinho/ai-wont-replace-product-designers-but-it-will-split-us-into-three-groups-3a30ab78a654",
+    image: "https://miro.medium.com/v2/resize:fit:1200/1*YgxulxwQCOQiO4uoPqsxtw.png",
+  },
+  {
+    name: "Voice and AI-powered digital assistants are challenging the user interfaces as we know them",
+    detail: "Voice-controlled LLMs and assistants are reshaping how we interact with computers.",
+    href: "https://medium.com/@macethinho/voice-and-ai-powered-digital-assistants-are-challenging-the-user-interfaces-as-we-know-them-4a38d6f97286",
+    image: "https://miro.medium.com/v2/resize:fit:1200/1*Zz_fo_GbVpa94ZDb_SFvrQ.jpeg",
+  },
+  {
+    name: "Measuring the beauty of an interface",
+    detail: "Use numbers to prove that a more beautiful interface converts more.",
+    href: "https://uxdesign.cc/measuring-the-beauty-of-an-interface-3b49360504fd",
+    image: "https://miro.medium.com/v2/resize:fit:1200/1*SHOwfn9ltZu5pM-QKr-IZg.png",
+  },
+  {
+    name: "Thoughts on AI in the Everyday Lives of Ordinary People",
+    detail: "How AI is becoming an invisible assistant inside everyday decisions.",
+    href: "https://www.lucascruz.work/thoughts-on-ai-in-the-everyday-lives-of-ordinary-people",
+    image: "https://cdn.prod.website-files.com/667b31082afed248049c6296/67ae76ad9edac47d3560e42b_Thoughts%20on%20AI%20in%20the%20Everyday%20Lives%20of%20Ordinary%20People.jpg",
+  },
+  {
+    name: "Entre o processo e o instinto",
+    detail: "O dilema de todo designer que quer ir além do correto e criar algo memorável.",
+    href: "https://lucazcrus.substack.com/p/entre-o-processo-e-o-instinto",
+    image: "https://substackcdn.com/image/fetch/$s_!jzQJ!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc5882341-a3ee-40e9-85ed-4c22bd3a6530_1200x630.png",
+  },
 ];
 
 export const allThinking: CardItem[] = [
   ...homeThinking,
-  { name: "Products shipped too soon", detail: "What gets sacrificed when teams skip the hard question.", image: thinkingImages[6] },
-  { name: "Small teams, senior taste", detail: "Why fewer people can mean better momentum.", image: thinkingImages[7] },
-  { name: "The new design tempo", detail: "How AI changes production without replacing judgment.", image: thinkingImages[8] },
-  { name: "A better interface with ambition", detail: "Making complex technology feel calm, direct, and worth using.", image: thinkingImages[9] },
-  { name: "What processes hide", detail: "When ceremonies protect teams from decisions.", image: thinkingImages[10] },
-  { name: "Bossa notes", detail: "Observations from the edge of product, brand, and AI.", image: thinkingImages[11] },
+  {
+    name: "Você não está sem ideias. Você está sem intervalos.",
+    detail: "Quando foi a última vez que você teve uma boa ideia longe da tela?",
+    href: "https://lucazcrus.substack.com/p/voce-nao-esta-sem-ideias-voce-esta",
+    image: "https://substackcdn.com/image/fetch/$s_!FDKb!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fda222a54-e021-4185-a10e-80d06486df07_1200x630.png",
+  },
+  {
+    name: "A Tecnologia Não Nos Roubou Nada. Nós Entregamos.",
+    detail: "Reflexões sobre o dia em que paramos de usar tecnologia e começamos a ser usados por ela.",
+    href: "https://lucazcrus.substack.com/p/a-tecnologia-nao-nos-roubou-nada",
+    image: "https://substackcdn.com/image/fetch/$s_!XdA_!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffdf6108a-0e77-4ef4-b437-d93b137a63db_1200x630.png",
+  },
 ];
 
 export function Intro() {
@@ -123,11 +145,12 @@ export function Splash() {
 }
 
 export function MediaCard({ item, hiddenAfter }: { item: CardItem; hiddenAfter?: boolean }) {
-  const href = item.slug ? `/work/${item.slug}` : "#";
+  const href = item.href ?? (item.slug ? `/work/${item.slug}` : "#");
+  const linkProps = item.href ? { target: "_blank", rel: "noreferrer" } : {};
 
   return (
     <article className={`col-2 card ${hiddenAfter ? "hide-small" : ""}`}>
-      <Link href={href} className="media">
+      <Link href={href} className="media" {...linkProps}>
         {item.video ? (
           <video loop autoPlay muted playsInline>
             <source src={item.video} type="video/mp4" />
@@ -141,7 +164,7 @@ export function MediaCard({ item, hiddenAfter }: { item: CardItem; hiddenAfter?:
         )}
       </Link>
       <div className="card-info">
-        <Link href={href} className="detail-title">
+        <Link href={href} className="detail-title" {...linkProps}>
           {item.name}
         </Link>
         <p>{item.detail}</p>
