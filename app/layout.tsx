@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   description:
     "Good technology deserves better design. Bossa builds it with care, at the pace AI makes possible.",
   icons: {
-    icon: "/assets/logo_bossa.svg",
-    shortcut: "/assets/logo_bossa.svg",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
   },
 };
 
