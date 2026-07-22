@@ -3,10 +3,26 @@
 import { SiteShell, clientList } from "../idc";
 
 const crew = [
-  ["Leandro Macedo", "Partner / Designer"],
-  ["Gustavo Dornelles", "Partner / Strategist"],
-  ["Lucas Cruz", "Partner / Designer"],
-  ["Fernanda Macedo", "Designer"],
+  {
+    name: "Leandro Macedo",
+    role: "Partner / Designer",
+    image: "/assets/crew-leandro.png",
+  },
+  {
+    name: "Gustavo Dornelles",
+    role: "Partner / Strategist",
+    image: "/assets/crew-gustavo.png",
+  },
+  {
+    name: "Lucas Cruz",
+    role: "Partner / Designer",
+    image: "/assets/crew-lucas.png",
+  },
+  {
+    name: "Fernanda Macedo",
+    role: "Designer",
+    image: "/assets/crew-fernanda.png",
+  },
 ];
 
 function InfoRow({ label, children }: { label: string; children: React.ReactNode }) {
@@ -54,17 +70,14 @@ export default function InformationPage() {
           </div>
         </section>
 
-        <section className="columns crew-photo-row">
-          <div className="col-12">
-            <img src="/assets/bossa-crew.png" alt="The Bossa crew: Leandro Macedo, Gustavo Dornelles, Lucas Cruz, and Fernanda Macedo" />
-          </div>
-        </section>
-
         <section className="columns crew-list">
-          {crew.map(([name, role]) => (
-            <article className="col-3 crew-member" key={name}>
-              <p>{name}</p>
-              <p className="muted">{role}</p>
+          {crew.map((person) => (
+            <article className="col-3 crew-member" key={person.name}>
+              <img src={person.image} alt={person.name} />
+              <div className="crew-member-info">
+                <p>{person.name}</p>
+                <p className="muted">{person.role}</p>
+              </div>
             </article>
           ))}
         </section>

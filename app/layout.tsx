@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Bossa",
   description:
-    "Good technology deserves better design. Bossa builds it with care, at the pace AI makes possible.",
+    "We partner with teams building ambitious technology and help shape it into products that feel clear, useful, and human.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

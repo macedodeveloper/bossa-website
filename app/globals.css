@@ -265,6 +265,10 @@ h2,
   margin-bottom: 8rem;
 }
 
+.work-row .card {
+  width: calc((100% - var(--gutter) * 3) / 4);
+}
+
 .journal-row {
   margin-bottom: 12rem;
 }
@@ -277,10 +281,19 @@ h2,
 }
 
 .bossa-hero h1 {
-  max-width: 88rem;
+  max-width: none;
+}
+
+.bossa-hero-content {
+  width: calc(((100% - var(--gutter)) / 2) * 1.25);
+  margin-left: calc(((100% - var(--gutter)) / 2) * -0.25);
+  margin-top: 3.2rem;
 }
 
 .bossa-work-gif {
+  display: block;
+  width: 100%;
+  margin-top: 4rem;
   margin-bottom: 12rem;
 }
 
@@ -305,6 +318,10 @@ h2,
   justify-content: flex-end;
 }
 
+.work-listing-main .card {
+  width: calc((100% - var(--gutter) * 3) / 4);
+}
+
 .card-grid {
   row-gap: 4rem;
 }
@@ -316,6 +333,11 @@ h2,
   overflow: hidden;
   margin-bottom: 0.8rem;
   background: rgb(var(--grey-20));
+}
+
+.work-row .card .media,
+.work-listing-main .card .media {
+  aspect-ratio: 16 / 10;
 }
 
 .card .media img {
@@ -390,7 +412,8 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   border-top: 1px solid rgb(var(--grey-20));
-  padding-block: 1.6rem;
+  padding-top: 1.6rem;
+  overflow: hidden;
 }
 
 .footer-grid {
@@ -401,8 +424,17 @@ footer {
   color: rgb(var(--green));
 }
 
-.footer-bottom {
-  margin-top: 4rem;
+.footer-brand {
+  width: 100vw;
+  height: 12.75vw;
+  overflow: hidden;
+  margin-top: 8rem;
+}
+
+.footer-brand img {
+  width: 100vw;
+  max-width: none;
+  height: auto;
 }
 
 .info-main {
@@ -492,15 +524,6 @@ footer {
   margin-bottom: 4rem;
 }
 
-.crew-photo-row {
-  margin-bottom: 1.6rem;
-}
-
-.crew-photo-row img {
-  aspect-ratio: 2974 / 1028;
-  object-fit: cover;
-}
-
 .crew-list {
   margin-bottom: 12rem;
 }
@@ -509,6 +532,66 @@ footer {
   font-size: 1.6rem;
   line-height: 2rem;
   letter-spacing: -0.02em;
+}
+
+.crew-member img {
+  aspect-ratio: 696 / 852;
+  object-fit: cover;
+  margin-bottom: 1.6rem;
+}
+
+.crew-member-info {
+  max-width: 24rem;
+}
+
+.case-study-main {
+  padding-top: 1.6rem;
+  margin-bottom: 12rem;
+}
+
+.case-study-kicker {
+  margin-bottom: 8rem;
+}
+
+.case-study-hero {
+  margin-bottom: 4rem;
+}
+
+.case-study-hero h1 {
+  font-size: 6rem;
+  line-height: 6.4rem;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.case-study-image {
+  margin-bottom: 8rem;
+}
+
+.case-study-image img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid rgb(var(--grey-20));
+}
+
+.case-study-overview,
+.case-study-body,
+.case-study-next {
+  border-top: 1px solid rgb(var(--grey-20));
+  padding-top: 1.6rem;
+}
+
+.case-study-overview {
+  row-gap: 4rem;
+  margin-bottom: 8rem;
+}
+
+.case-study-body {
+  margin-bottom: 8rem;
+}
+
+.case-study-next {
+  margin-top: 12rem;
 }
 
 @keyframes splash-in {
@@ -609,7 +692,14 @@ footer {
     padding-bottom: 4rem;
   }
 
+  .bossa-hero-content {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2.4rem;
+  }
+
   .bossa-work-gif {
+    margin-top: 2.4rem;
     margin-bottom: 8rem;
   }
 
@@ -632,6 +722,19 @@ footer {
   .card {
     --span: 4;
     width: calc((100% - var(--gutter)) / 2);
+  }
+
+  .work-row .card {
+    width: calc((100% - var(--gutter)) / 2);
+  }
+
+  .work-listing-main .card {
+    width: calc((100% - var(--gutter)) / 2);
+  }
+
+  .work-row .card .media,
+  .work-listing-main .card .media {
+    aspect-ratio: 4 / 3;
   }
 
   .media-type-card {
@@ -695,15 +798,6 @@ footer {
     margin-top: 8rem;
   }
 
-  .crew-photo-row {
-    overflow-x: auto;
-  }
-
-  .crew-photo-row img {
-    width: 78rem;
-    max-width: none;
-  }
-
   .crew-list {
     row-gap: 1.6rem;
   }
@@ -730,6 +824,34 @@ footer {
     color: rgb(var(--grey-60));
   }
 
+  .case-study-main {
+    padding-top: 1.2rem;
+    margin-bottom: 8rem;
+  }
+
+  .case-study-kicker,
+  .case-study-hero,
+  .case-study-image,
+  .case-study-overview,
+  .case-study-body {
+    row-gap: 0.8rem;
+    margin-bottom: 6rem;
+  }
+
+  .case-study-hero h1 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+
+  .case-study-image img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .case-study-next {
+    row-gap: 0.8rem;
+    margin-top: 8rem;
+  }
+
   .hide-small {
     display: none;
   }
@@ -753,5 +875,10 @@ footer {
 
   .footer-grid .col-6:nth-child(2n) {
     margin-bottom: 2.4rem;
+  }
+
+  .footer-brand {
+    height: 12.75vw;
+    margin-top: 6rem;
   }
 }
