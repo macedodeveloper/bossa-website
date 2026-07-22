@@ -1087,7 +1087,6 @@ footer {
   }
 
   footer {
-    min-height: 100vh;
     margin-top: 8rem;
   }
 
@@ -1101,6 +1100,6 @@ footer {
 
   .footer-brand {
     height: 12.75vw;
-    margin-top: 6rem;
+    margin-top: 3.2rem;
   }
 }
