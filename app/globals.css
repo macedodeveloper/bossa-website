@@ -280,6 +280,16 @@ h2,
   max-width: 88rem;
 }
 
+.bossa-work-gif {
+  margin-bottom: 12rem;
+}
+
+.bossa-work-gif img {
+  aspect-ratio: 960 / 620;
+  object-fit: cover;
+  border: 1px solid rgb(var(--grey-20));
+}
+
 .bossa-client-strip {
   border-top: 1px solid rgb(var(--grey-20));
   padding-top: 1.6rem;
@@ -597,6 +607,14 @@ footer {
   .bossa-hero {
     min-height: 46vh;
     padding-bottom: 4rem;
+  }
+
+  .bossa-work-gif {
+    margin-bottom: 8rem;
+  }
+
+  .bossa-work-gif img {
+    aspect-ratio: 4 / 3;
   }
 
   .bossa-client-strip {

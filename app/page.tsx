@@ -14,6 +14,11 @@ export default function Home() {
             <h1>{bossaIntro}</h1>
           </div>
         </section>
+        <section className="columns bossa-work-gif" aria-label="Bossa work preview">
+          <div className="col-12">
+            <img src="/assets/bossa-work.gif" alt="Bossa work preview" />
+          </div>
+        </section>
         <section className="columns bossa-client-strip">
           <div className="col-6">
             <p className="label">Clients</p>
